@@ -3,6 +3,7 @@ from time import sleep #지정한 초만큼 여유를 주는 것
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import pyperclip
+from private import private
 
 driver_path = r"C:\Users\유정\Workspace\chromedriver_win32"
 driver_name = "chromedriver.exe"
@@ -14,7 +15,7 @@ driver.get(login_url)
 sleep(1)
 
 my_id = "ulbo0908"
-my_pw = "dbwjd!125498"
+my_pw = ""
 naver_id = driver.find_element_by_id("id")
 naver_pw = driver.find_element_by_id("pw")
 sleep(1)
