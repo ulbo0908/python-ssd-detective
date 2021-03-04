@@ -14,8 +14,8 @@ login_url = "https://nid.naver.com/nidlogin.login"
 driver.get(login_url)
 sleep(1)
 
-my_id = "ulbo0908"
-my_pw = ""
+my_id = private["id"]
+my_pw = private["pw"]
 naver_id = driver.find_element_by_id("id")
 naver_pw = driver.find_element_by_id("pw")
 sleep(1)
